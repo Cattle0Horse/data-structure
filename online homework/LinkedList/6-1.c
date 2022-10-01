@@ -1,4 +1,10 @@
 //求链式表的表长
+/*
+输入样例：
+1 3 4 5 2 -1
+输出样例：
+5
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,4 +1,12 @@
 //单链表分段逆转
+/*
+输入样例：
+6
+1 2 3 4 5 6
+4
+输出样例：
+4 3 2 1 5 6
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -56,11 +64,21 @@ void PrintList(List L) {
 }
 
 /* 你的代码将被嵌在这里 */
-// 19分未满
 
+/*
+19分未满
+未通过测试点:
+1号测试点（正好全反转）
+5号测试点（大规模数据，最后剩K-1不反转）
+*/
+
+// 题意理解错了，需要将所有K段反转，不是第一个K段
+/*
 void K_Reverse(List L, int K) {
-    if (K <= 1 || L == NULL) return;
-    int n = 1;
+    if (K <= 1 || L == NULL || L->Next == NULL) return;
+    // int n = 1;
+    // List o = L->Next;
+    // while (o->Next != NULL) ++n, o = o->Next;
     List temp = L->Next;
     List head = L;
     L = L->Next;
@@ -83,4 +101,30 @@ void K_Reverse(List L, int K) {
     L->Next = pre;
     head->Next = L;
     L = head;
+}
+*/
+
+void K_Reverse(List L, int K) {
+    if (K <= 1 || L == NULL || L->Next == NULL) return;
+    int n = 1;
+    List o = L->Next;
+    while (o->Next != NULL) ++n, o = o->Next;
+    List head = L;
+    List temp, start, pre, cur;
+    for (int i = 0; i < n / K; ++i) {
+        start = head->Next;
+        pre = head->Next;
+        cur = pre->Next;
+        int j = 1;
+        while (j < K) {
+            temp = cur->Next;
+            cur->Next = pre;
+            pre = cur;
+            cur = temp;
+            ++j;
+        }
+        start->Next = cur;
+        head->Next = pre;
+        head = start;
+    }
 }

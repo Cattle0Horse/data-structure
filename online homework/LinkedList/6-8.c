@@ -1,4 +1,20 @@
 //带头结点的链式表操作集
+/*
+输入样例：
+6
+12 2 4 87 10 2
+4
+2 12 87 5
+输出样例：
+2 is found and deleted.
+12 is found and deleted.
+87 is found and deleted.
+Finding Error: 5 is not in.
+5 is inserted as the last element.
+Wrong Position for Insertion
+Wrong Position for Deletion
+10 4 2 5 
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,4 +1,15 @@
 //两个有序链表序列的合并
+/*
+输入样例：
+3
+1 3 5
+5
+2 4 6 8 10
+输出样例：
+1 2 3 4 5 6 8 10 
+NULL
+NULL
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

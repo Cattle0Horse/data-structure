@@ -1,0 +1,12 @@
+4
+Del
+Add 5
+Add 4
+Add 3
+Del
+Del
+Add 2
+Add 1
+Add 0
+Add 10
+End

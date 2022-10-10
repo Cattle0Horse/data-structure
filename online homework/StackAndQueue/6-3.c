@@ -20,7 +20,7 @@ Stack Empty
 Stack Full
 0 1 2 5
 */
-
+ 
 #include <stdio.h>
 #include <stdlib.h>
 

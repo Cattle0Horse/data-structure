@@ -73,7 +73,7 @@ int main() {
 
 /* 你的代码将被嵌在这里 */
 
-
+ 
 Queue CreateQueue(int MaxSize) {
     Queue ret = (Queue)malloc(sizeof(struct QNode));
     ret->Data = (ElementType *)malloc(MaxSize * sizeof(ElementType));

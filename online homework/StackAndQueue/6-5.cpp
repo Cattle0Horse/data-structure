@@ -21,7 +21,7 @@ Pop:1 3 5 7 9 NULL
 Head:NULL
 Pop:NULL
 */
-
+ 
 #include <bits/stdc++.h>
 using namespace std;
 typedef int ElemType;

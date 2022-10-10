@@ -50,7 +50,7 @@ Queue CreateQueue(int MaxSize) {
     Q->MaxSize = MaxSize;
     return Q;
 }
-
+ 
 bool AddQ(Queue Q, ElementType X);
 ElementType DeleteQ(Queue Q);
 

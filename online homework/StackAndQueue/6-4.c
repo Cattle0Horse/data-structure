@@ -21,7 +21,7 @@ Stack 1 is Full!
 Pop from Stack 1: 1
 Pop from Stack 2: 13 12 11
 */
-
+ 
 #include <stdio.h>
 #include <stdlib.h>
 

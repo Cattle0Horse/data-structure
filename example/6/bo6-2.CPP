@@ -1,4 +1,8 @@
 // bo6-2.cpp 二叉树的二叉链表存储(存储结构由c6-2.h定义)的基本操作(22个)
+#ifndef BO6_2_CPP
+#define BO6_2_CPP
+
+#include "C6-2.H"
 Status InitBiTree(BiTree &T) {  // 操作结果: 构造空二叉树T
     T = NULL;
     return OK;
@@ -304,3 +308,5 @@ void LevelOrderTraverse(BiTree T, Status (*Visit)(TElemType)) {  // 初始条件：二
         printf("\n");
     }
 }
+
+#endif

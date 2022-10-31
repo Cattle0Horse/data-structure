@@ -1,4 +1,9 @@
 // bo3-2.cpp Á´¶ÓÁÐ(´æ´¢½á¹¹ÓÉc3-2.h¶¨Òå)µÄ»ù±¾²Ù×÷(9¸ö)
+#ifndef BO3_2_CPP
+#define BO3_2_CPP
+
+#include "C3-2.H"
+
 Status InitQueue(LinkQueue &Q) {  // ¹¹ÔìÒ»¸ö¿Õ¶ÓÁÐQ
     if (!(Q.front = Q.rear = (QueuePtr)malloc(sizeof(QNode))))
         exit(OVERFLOW);
@@ -89,3 +94,5 @@ Status QueueTraverse(LinkQueue Q, void (*vi)(QElemType)) {  // ´Ó¶ÓÍ·µ½¶ÓÎ²ÒÀ´Î¶
     printf("\n");
     return OK;
 }
+
+#endif

@@ -23,7 +23,7 @@ Status visitT(TElemType e) {
 #endif
     return OK;
 }
-void main() {
+int main() {
     int i;
     BiTree T, p, c;
     TElemType e1, e2;
@@ -199,4 +199,5 @@ void main() {
     PreOrderTraverse(T, visitT);
     printf("\n");
     DestroyBiTree(T);
+    return 0;
 }

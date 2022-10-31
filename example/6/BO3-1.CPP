@@ -1,4 +1,9 @@
 // bo3-1.cpp 顺序栈（存储结构由c3-1.h定义）的基本操作（9个）
+#ifndef BO3_1_CPP
+#define BO3_1_CPP
+
+#include "C3-1.H"
+#include "c1.h"
 Status InitStack(SqStack &S) {  // 构造一个空栈S
     if (!(S.base = (SElemType *)malloc(STACK_INIT_SIZE * sizeof(SElemType))))
         exit(OVERFLOW);  // 存储分配失败
@@ -66,3 +71,5 @@ Status StackTraverse(SqStack S, Status (*visit)(SElemType)) {  // 从栈底到栈顶依
     printf("\n");
     return OK;
 }
+
+#endif

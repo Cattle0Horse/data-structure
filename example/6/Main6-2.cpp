@@ -24,6 +24,7 @@ Status visitT(TElemType e) {
     return OK;
 }
 int main() {
+    freopen("in.txt","r",stdin);
     int i;
     BiTree T, p, c;
     TElemType e1, e2;
